@@ -1,0 +1,64 @@
+{
+	"@type":"Process",
+	"Name":"}Drill_budget_line_entry",
+	"Code@Code.link":"}Drill_budget_line_entry.ti",
+	"DataSource":
+	{
+		"Type":"TM1CubeView",
+		"dataSourceNameForClient":"plan_BudgetPlanLineItem",
+		"dataSourceNameForServer":"plan_BudgetPlanLineItem",
+		"view":"Detail Budget Line Entry"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"cubename",
+			"Prompt":"",
+			"Value":"plan_BudgetPlanLineItem",
+			"Type":"String"
+		},
+		{
+			"Name":"plan_version",
+			"Prompt":"",
+			"Value":"FY 2003 Budget",
+			"Type":"String"
+		},
+		{
+			"Name":"plan_business_unit",
+			"Prompt":"",
+			"Value":"10000",
+			"Type":"String"
+		},
+		{
+			"Name":"plan_department",
+			"Prompt":"",
+			"Value":"1000",
+			"Type":"String"
+		},
+		{
+			"Name":"plan_chart_of_accounts",
+			"Prompt":"",
+			"Value":"41101",
+			"Type":"String"
+		},
+		{
+			"Name":"plan_exchange_rates",
+			"Prompt":"",
+			"Value":"local",
+			"Type":"String"
+		},
+		{
+			"Name":"plan_lines",
+			"Prompt":"",
+			"Value":"line 1",
+			"Type":"String"
+		},
+		{
+			"Name":"plan_time",
+			"Prompt":"",
+			"Value":"Description",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

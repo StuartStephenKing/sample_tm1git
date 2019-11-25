@@ -1,0 +1,35 @@
+{
+	"@type":"Cube",
+	"Name":"plan_BudgetPlanLineItem",
+	"Rules@Code.link":"plan_BudgetPlanLineItem.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('plan_version')"
+		},
+		{
+			"@id":"Dimensions('plan_business_unit')"
+		},
+		{
+			"@id":"Dimensions('plan_department')"
+		},
+		{
+			"@id":"Dimensions('plan_chart_of_accounts')"
+		},
+		{
+			"@id":"Dimensions('plan_exchange_rates')"
+		},
+		{
+			"@id":"Dimensions('plan_lines')"
+		},
+		{
+			"@id":"Dimensions('plan_time')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"plan_BudgetPlanLineItem.views/Default.json",
+		"plan_BudgetPlanLineItem.views/Detail Budget Line Entry.json",
+		"plan_BudgetPlanLineItem.views/plan_line_item_input.json"
+	]
+}

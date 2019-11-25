@@ -1,0 +1,26 @@
+{
+	"@type":"Cube",
+	"Name":"Stuarts No Rules Cube",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('plan_business_unit')"
+		},
+		{
+			"@id":"Dimensions('plan_chart_of_accounts')"
+		},
+		{
+			"@id":"Dimensions('plan_controls')"
+		},
+		{
+			"@id":"Dimensions('plan_currency')"
+		},
+		{
+			"@id":"Dimensions('plan_department')"
+		},
+		{
+			"@id":"Dimensions('plan_exchange_rates')"
+		}
+	],
+	"Views@Code.links":[]
+}

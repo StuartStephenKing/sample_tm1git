@@ -1,0 +1,103 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#
+# Loop through all dimensions skipping system dimensions
+#
+vDimCount = DIMSIZ('}dimensions');
+
+vDimIndex = 1;
+
+while (vDimIndex <= vDimCount);
+vDim = DIMNM('}dimensions', vDimIndex);
+
+if (SUBST(vDim, 1, 1) @<> '}');
+
+#
+# Test to see if an attribute cube exists for the current dimension
+#
+vAttrDim = '}ElementAttributes_' | vDim;
+vTest = TABDIM(vAttrDim,1);
+if (vTest @<> '');
+
+#
+# Loop through all attributes in the dimension looking for attributes that have a matching language attribute
+# _ENGLISH or _GERMAN or _FRENCH
+#
+vAttrCount = DIMSIZ(vAttrDim);
+vAttrIndex = 1;
+while (vAttrIndex <= vAttrCount);
+vAttr = DIMNM(vAttrDim,  vAttrIndex);
+
+vFromAttr = vAttr | '_' | pLanguage;
+vFromExists = DIMIX(vAttrDim, vFromAttr);
+if (vFromExists > 0);
+
+#
+# Loop through all elements in the dimension moving the attribute value from the language to the main
+#
+vEleCount = DIMSIZ(vDim);
+vEleIndex = 1;
+while (vEleIndex <= vEleCount);
+vEle = DIMNM(vDim, vEleIndex);
+
+ATTRPUTS(ATTRS(vDim, vEle, vFromAttr), vDim, vEle, vAttr);
+vEleIndex = vEleIndex + 1;
+end;
+
+endif;
+
+vAttrIndex = vAttrIndex + 1;
+end;
+
+endif;
+
+endif;
+
+vDimIndex = vDimIndex + 1;
+end;
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+LastIndx=DIMSIZ('plan_chart_of_accounts');
+IndxCount=1;
+
+While(IndxCount <= LastIndx);
+VElement=DIMNM('plan_chart_of_accounts', IndxCount);
+
+## Get The Account Attribute value
+VAttValue=ATTRS('plan_chart_of_accounts', VElement, 'FormatGroup');
+
+IF(VAttValue@<>'');
+
+## Check that the Attribute Value Exist as an element in the plan format;
+IF(DIMIX('plan_format_template',VAttValue)>0);
+
+VNewValue=ATTRS('plan_format_template',VAttValue,'FormatGroup');
+
+
+IF(VNewValue @<> '');
+AttrPutS(VNewValue, 'plan_chart_of_accounts', VElement, 'FormatGroup');
+ENDIF;
+endif;
+endif;
+
+IndxCount=IndxCount+1;
+
+end;
+#endregion

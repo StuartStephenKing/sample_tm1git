@@ -1,0 +1,36 @@
+{
+    "Version": "1.0",
+    "Tasks":
+    {
+        "ImportData":
+        {
+            "Process": "Processes('git_task')",
+            "Parameters": [ { "Name": "op", "Value": "1" } ]
+        },
+        "ExportData":
+        {
+            "Process": "Processes('git_task')",
+            "Parameters": [ { "Name": "op", "Value": "0" } ]
+        }
+    },
+    "PostPull":
+    [ 
+        "Tasks('ImportData')"
+    ],
+    "PrePush":
+    [ 
+        "Tasks('ExportData')"
+    ],
+    "Files":
+    [
+        "}Externals/*"   
+    ],
+    "Ignore":
+    [
+        "!Processes('}Drill_budget_line_entry')",
+        "!Processes('}Drill_COS_analysis')",
+        "!Processes('}Drill_Expense_analysis')",
+        "!Processes('}Drill_RDBMS_ly_actuals')",
+        "!Processes('}Drill_Revenue_analysis')"
+    ]
+}

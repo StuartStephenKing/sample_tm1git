@@ -1,0 +1,19 @@
+{
+	"@type":"Process",
+	"Name":"plan_set_language",
+	"Code@Code.link":"plan_set_language.ti",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pLanguage",
+			"Prompt":"Language (German",
+			"Value":"English",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

@@ -1,0 +1,14 @@
+{
+	"@type":"Dimension",
+	"Name":"plan_business_unit",
+	"AllLeavesHierarchyName":"Leaves",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('plan_business_unit')/Hierarchies('plan_business_unit')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"plan_business_unit.hierarchies/plan_business_unit.json",
+		"plan_business_unit.hierarchies/newHierarchyName.json"
+	]
+}

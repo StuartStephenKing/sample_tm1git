@@ -1,0 +1,41 @@
+{
+	"@type":"Cube",
+	"Name":"plan_Report",
+	"Rules@Code.link":"plan_Report.rules",
+	"DrillthroughRules@Code.link":"plan_Report.drillthrough.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('plan_business_unit')"
+		},
+		{
+			"@id":"Dimensions('plan_department')"
+		},
+		{
+			"@id":"Dimensions('plan_chart_of_accounts')"
+		},
+		{
+			"@id":"Dimensions('plan_exchange_rates')"
+		},
+		{
+			"@id":"Dimensions('plan_report')"
+		},
+		{
+			"@id":"Dimensions('plan_time')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"plan_Report.views/2003 LY Actual.json",
+		"plan_Report.views/2003 LY Budget.json",
+		"plan_Report.views/2004 Budget v LY Actual.json",
+		"plan_Report.views/2004 LY Actual Budget.json",
+		"plan_Report.views/2004 submitted budget.json",
+		"plan_Report.views/actual_budget_variance.json",
+		"plan_Report.views/ExBudgetAatual.json",
+		"plan_Report.views/LY 2004 Actuals.json",
+		"plan_Report.views/plan_budget_input_ly_actual.json",
+		"plan_Report.views/zero_out_2003_actuals.json",
+		"plan_Report.views/zero out 2003 budget.json"
+	]
+}

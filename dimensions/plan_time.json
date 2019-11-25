@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"plan_time",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('plan_time')/Hierarchies('plan_time')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"plan_time.hierarchies/plan_time.json"
+	]
+}

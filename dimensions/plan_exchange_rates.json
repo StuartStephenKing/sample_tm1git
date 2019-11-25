@@ -1,0 +1,14 @@
+{
+	"@type":"Dimension",
+	"Name":"plan_exchange_rates",
+	"AllLeavesHierarchyName":"Leaves",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('plan_exchange_rates')/Hierarchies('plan_exchange_rates')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"plan_exchange_rates.hierarchies/plan_exchange_rates.json",
+		"plan_exchange_rates.hierarchies/Duplicate.json"
+	]
+}

@@ -1,0 +1,396 @@
+{
+	"@type":"Hierarchy",
+	"Name":"plan_chart_of_accounts",
+	"Elements":
+	[
+		{
+			"Name":"41101",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"42201",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Revenue",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"51001",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"51003",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"COS",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"61010",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"61015",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"61030",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"61065",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"61080",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"61095",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"64055",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"64060",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"64065",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"64070",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"64090",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"64100",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"66005",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"66010",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"67010",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"67015",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Other Expenses",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"61060",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"61070",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"62001",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Payroll",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"63040",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Travel",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"64005",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"64020",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Depr & Amort",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"65005",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"65006",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"65015",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"65018",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"65020",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"65022",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"65035",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Adv & Marketing",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Operating Expense",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Net Operating Income",
+			"Type":"Consolidated"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"Revenue",
+			"ComponentName":"41101",
+			"Weight":1
+		},
+		{
+			"ParentName":"Revenue",
+			"ComponentName":"42201",
+			"Weight":1
+		},
+		{
+			"ParentName":"COS",
+			"ComponentName":"51001",
+			"Weight":1
+		},
+		{
+			"ParentName":"COS",
+			"ComponentName":"51003",
+			"Weight":1
+		},
+		{
+			"ParentName":"Other Expenses",
+			"ComponentName":"61010",
+			"Weight":1
+		},
+		{
+			"ParentName":"Other Expenses",
+			"ComponentName":"61015",
+			"Weight":1
+		},
+		{
+			"ParentName":"Other Expenses",
+			"ComponentName":"61030",
+			"Weight":1
+		},
+		{
+			"ParentName":"Other Expenses",
+			"ComponentName":"61065",
+			"Weight":1
+		},
+		{
+			"ParentName":"Other Expenses",
+			"ComponentName":"61080",
+			"Weight":1
+		},
+		{
+			"ParentName":"Other Expenses",
+			"ComponentName":"61095",
+			"Weight":1
+		},
+		{
+			"ParentName":"Other Expenses",
+			"ComponentName":"64055",
+			"Weight":1
+		},
+		{
+			"ParentName":"Other Expenses",
+			"ComponentName":"64060",
+			"Weight":1
+		},
+		{
+			"ParentName":"Other Expenses",
+			"ComponentName":"64065",
+			"Weight":1
+		},
+		{
+			"ParentName":"Other Expenses",
+			"ComponentName":"64070",
+			"Weight":1
+		},
+		{
+			"ParentName":"Other Expenses",
+			"ComponentName":"64090",
+			"Weight":1
+		},
+		{
+			"ParentName":"Other Expenses",
+			"ComponentName":"64100",
+			"Weight":1
+		},
+		{
+			"ParentName":"Other Expenses",
+			"ComponentName":"66005",
+			"Weight":1
+		},
+		{
+			"ParentName":"Other Expenses",
+			"ComponentName":"66010",
+			"Weight":1
+		},
+		{
+			"ParentName":"Other Expenses",
+			"ComponentName":"67010",
+			"Weight":1
+		},
+		{
+			"ParentName":"Other Expenses",
+			"ComponentName":"67015",
+			"Weight":1
+		},
+		{
+			"ParentName":"Payroll",
+			"ComponentName":"61060",
+			"Weight":1
+		},
+		{
+			"ParentName":"Payroll",
+			"ComponentName":"61070",
+			"Weight":1
+		},
+		{
+			"ParentName":"Payroll",
+			"ComponentName":"62001",
+			"Weight":1
+		},
+		{
+			"ParentName":"Travel",
+			"ComponentName":"63040",
+			"Weight":1
+		},
+		{
+			"ParentName":"Depr & Amort",
+			"ComponentName":"64005",
+			"Weight":1
+		},
+		{
+			"ParentName":"Depr & Amort",
+			"ComponentName":"64020",
+			"Weight":1
+		},
+		{
+			"ParentName":"Adv & Marketing",
+			"ComponentName":"65005",
+			"Weight":1
+		},
+		{
+			"ParentName":"Adv & Marketing",
+			"ComponentName":"65006",
+			"Weight":1
+		},
+		{
+			"ParentName":"Adv & Marketing",
+			"ComponentName":"65015",
+			"Weight":1
+		},
+		{
+			"ParentName":"Adv & Marketing",
+			"ComponentName":"65018",
+			"Weight":1
+		},
+		{
+			"ParentName":"Adv & Marketing",
+			"ComponentName":"65020",
+			"Weight":1
+		},
+		{
+			"ParentName":"Adv & Marketing",
+			"ComponentName":"65022",
+			"Weight":1
+		},
+		{
+			"ParentName":"Adv & Marketing",
+			"ComponentName":"65035",
+			"Weight":1
+		},
+		{
+			"ParentName":"Operating Expense",
+			"ComponentName":"Other Expenses",
+			"Weight":1
+		},
+		{
+			"ParentName":"Operating Expense",
+			"ComponentName":"Payroll",
+			"Weight":1
+		},
+		{
+			"ParentName":"Operating Expense",
+			"ComponentName":"Travel",
+			"Weight":1
+		},
+		{
+			"ParentName":"Operating Expense",
+			"ComponentName":"Depr & Amort",
+			"Weight":1
+		},
+		{
+			"ParentName":"Operating Expense",
+			"ComponentName":"Adv & Marketing",
+			"Weight":1
+		},
+		{
+			"ParentName":"Net Operating Income",
+			"ComponentName":"Revenue",
+			"Weight":1
+		},
+		{
+			"ParentName":"Net Operating Income",
+			"ComponentName":"COS",
+			"Weight":-1
+		},
+		{
+			"ParentName":"Net Operating Income",
+			"ComponentName":"Operating Expense",
+			"Weight":-1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"plan_chart_of_accounts.subsets/Consolidations.json",
+		"plan_chart_of_accounts.subsets/Default.json",
+		"plan_chart_of_accounts.subsets/Net_Operating_Income.json",
+		"plan_chart_of_accounts.subsets/n level accounts.json",
+		"plan_chart_of_accounts.subsets/plan_budget_accts_reverse.json",
+		"plan_chart_of_accounts.subsets/plan_line_item_accounts.json",
+		"plan_chart_of_accounts.subsets/plan_top_level_accts.json",
+		"plan_chart_of_accounts.subsets/Reverse Detailed Chart Of Accounts.json",
+		"plan_chart_of_accounts.subsets/Summary Reverse ChartOfAccounts.json",
+		"plan_chart_of_accounts.subsets/test expand down.json"
+	]
+}

@@ -1,0 +1,65 @@
+{
+	"@type":"Hierarchy",
+	"Name":"plan_lines",
+	"Elements":
+	[
+		{
+			"Name":"line 1",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"line 2",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"line 3",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"line 4",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"line 5",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"All Lines",
+			"Type":"Consolidated"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"All Lines",
+			"ComponentName":"line 1",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Lines",
+			"ComponentName":"line 2",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Lines",
+			"ComponentName":"line 3",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Lines",
+			"ComponentName":"line 4",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Lines",
+			"ComponentName":"line 5",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"plan_lines.subsets/Default.json",
+		"plan_lines.subsets/lines.json",
+		"plan_lines.subsets/TotalLines.json"
+	]
+}

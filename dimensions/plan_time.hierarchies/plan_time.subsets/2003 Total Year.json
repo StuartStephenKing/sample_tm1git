@@ -1,0 +1,10 @@
+{
+	"@type":"Subset",
+	"Name":"2003 Total Year",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('plan_time')/Hierarchies('plan_time')/Elements('2003')"
+		}
+	]
+}

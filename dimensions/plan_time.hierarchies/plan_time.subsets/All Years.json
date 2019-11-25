@@ -1,0 +1,16 @@
+{
+	"@type":"Subset",
+	"Name":"All Years",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('plan_time')/Hierarchies('plan_time')/Elements('2003')"
+		},
+		{
+			"@id":"Dimensions('plan_time')/Hierarchies('plan_time')/Elements('2004')"
+		},
+		{
+			"@id":"Dimensions('plan_time')/Hierarchies('plan_time')/Elements('2005')"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"@type":"Subset",
+	"Name":"Budget,LYBudget,LYActuals",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('plan_report')/Hierarchies('plan_report')/Elements('budget')"
+		},
+		{
+			"@id":"Dimensions('plan_report')/Hierarchies('plan_report')/Elements('ly budget')"
+		},
+		{
+			"@id":"Dimensions('plan_report')/Hierarchies('plan_report')/Elements('ly actual')"
+		}
+	]
+}

@@ -1,0 +1,46 @@
+{
+	"@type":"Hierarchy",
+	"Name":"plan_report",
+	"Elements":
+	[
+		{
+			"Name":"ly budget",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"ly actual",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"budget",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"actual",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Variance",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"ly budget v budget variance",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"ly actual v actual variance",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"plan_report.subsets/actual.json",
+		"plan_report.subsets/AllReports.json",
+		"plan_report.subsets/budget.json",
+		"plan_report.subsets/Budget,LYBudget,LYActuals.json",
+		"plan_report.subsets/ly actual.json",
+		"plan_report.subsets/ly budget.json",
+		"plan_report.subsets/plan_exec_report.json",
+		"plan_report.subsets/variance analysis.json"
+	]
+}

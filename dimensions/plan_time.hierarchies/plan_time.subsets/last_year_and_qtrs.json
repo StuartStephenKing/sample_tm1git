@@ -1,0 +1,22 @@
+{
+	"@type":"Subset",
+	"Name":"last_year_and_qtrs",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('plan_time')/Hierarchies('plan_time')/Elements('2003')"
+		},
+		{
+			"@id":"Dimensions('plan_time')/Hierarchies('plan_time')/Elements('Q1-2003')"
+		},
+		{
+			"@id":"Dimensions('plan_time')/Hierarchies('plan_time')/Elements('Q2-2003')"
+		},
+		{
+			"@id":"Dimensions('plan_time')/Hierarchies('plan_time')/Elements('Q3-2003')"
+		},
+		{
+			"@id":"Dimensions('plan_time')/Hierarchies('plan_time')/Elements('Q4-2003')"
+		}
+	]
+}

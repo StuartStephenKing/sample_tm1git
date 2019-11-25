@@ -1,0 +1,10 @@
+{
+	"@type":"Subset",
+	"Name":"TotalLines",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('plan_lines')/Hierarchies('plan_lines')/Elements('All Lines')"
+		}
+	]
+}

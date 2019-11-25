@@ -1,0 +1,10 @@
+{
+	"@type":"Subset",
+	"Name":"FY 2004 Budget",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('plan_version')/Hierarchies('Cool')/Elements('FY 2004 Budget')"
+		}
+	]
+}

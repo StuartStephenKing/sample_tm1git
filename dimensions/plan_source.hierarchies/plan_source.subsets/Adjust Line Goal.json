@@ -1,0 +1,16 @@
+{
+	"@type":"Subset",
+	"Name":"Adjust Line Goal",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('plan_source')/Hierarchies('plan_source')/Elements('goal')"
+		},
+		{
+			"@id":"Dimensions('plan_source')/Hierarchies('plan_source')/Elements('line input')"
+		},
+		{
+			"@id":"Dimensions('plan_source')/Hierarchies('plan_source')/Elements('input')"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"@type":"Subset",
+	"Name":"All rates",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('plan_exchange_rates')/Hierarchies('Duplicate')/Elements('local')"
+		},
+		{
+			"@id":"Dimensions('plan_exchange_rates')/Hierarchies('Duplicate')/Elements('beginning')"
+		},
+		{
+			"@id":"Dimensions('plan_exchange_rates')/Hierarchies('Duplicate')/Elements('ending')"
+		},
+		{
+			"@id":"Dimensions('plan_exchange_rates')/Hierarchies('Duplicate')/Elements('planning')"
+		},
+		{
+			"@id":"Dimensions('plan_exchange_rates')/Hierarchies('Duplicate')/Elements('spot')"
+		},
+		{
+			"@id":"Dimensions('plan_exchange_rates')/Hierarchies('Duplicate')/Elements('actual')"
+		}
+	]
+}

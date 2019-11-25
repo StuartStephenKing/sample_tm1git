@@ -1,0 +1,98 @@
+{
+	"@type":"Hierarchy",
+	"Name":"plan_source",
+	"Elements":
+	[
+		{
+			"Name":"goal",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"budget",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"COS (future)",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"depreciation (future)",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"payroll (future)",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"revenue (future)",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"other expense (future)",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"allocations (future)",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"input",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"line input",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"budget",
+			"ComponentName":"line input",
+			"Weight":1
+		},
+		{
+			"ParentName":"budget",
+			"ComponentName":"input",
+			"Weight":1
+		},
+		{
+			"ParentName":"budget",
+			"ComponentName":"COS (future)",
+			"Weight":1
+		},
+		{
+			"ParentName":"budget",
+			"ComponentName":"depreciation (future)",
+			"Weight":1
+		},
+		{
+			"ParentName":"budget",
+			"ComponentName":"payroll (future)",
+			"Weight":1
+		},
+		{
+			"ParentName":"budget",
+			"ComponentName":"revenue (future)",
+			"Weight":1
+		},
+		{
+			"ParentName":"budget",
+			"ComponentName":"other expense (future)",
+			"Weight":1
+		},
+		{
+			"ParentName":"budget",
+			"ComponentName":"allocations (future)",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"plan_source.subsets/Adjust Line Goal.json",
+		"plan_source.subsets/budget.json",
+		"plan_source.subsets/BudgetTotal.json",
+		"plan_source.subsets/Goal.json",
+		"plan_source.subsets/input.json"
+	]
+}

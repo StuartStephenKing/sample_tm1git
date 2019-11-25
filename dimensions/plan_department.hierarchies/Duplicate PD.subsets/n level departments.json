@@ -1,0 +1,28 @@
+{
+	"@type":"Subset",
+	"Name":"n level departments",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('plan_department')/Hierarchies('Duplicate PD')/Elements('105')"
+		},
+		{
+			"@id":"Dimensions('plan_department')/Hierarchies('Duplicate PD')/Elements('110')"
+		},
+		{
+			"@id":"Dimensions('plan_department')/Hierarchies('Duplicate PD')/Elements('115')"
+		},
+		{
+			"@id":"Dimensions('plan_department')/Hierarchies('Duplicate PD')/Elements('200')"
+		},
+		{
+			"@id":"Dimensions('plan_department')/Hierarchies('Duplicate PD')/Elements('300')"
+		},
+		{
+			"@id":"Dimensions('plan_department')/Hierarchies('Duplicate PD')/Elements('405')"
+		},
+		{
+			"@id":"Dimensions('plan_department')/Hierarchies('Duplicate PD')/Elements('410')"
+		}
+	]
+}

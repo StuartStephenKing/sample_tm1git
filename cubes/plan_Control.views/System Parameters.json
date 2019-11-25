@@ -1,0 +1,30 @@
+{
+	"@type":"NativeView",
+	"Name":"System Parameters",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('plan_measure_setting')/Hierarchies('plan_measure_setting')/Subsets('Default')"
+			}
+		}
+	],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('plan_controls')/Hierarchies('plan_controls')"
+				},
+				"Expression":"TM1SubsetAll([plan_controls])"
+			}
+		}
+	],
+	"Titles":[],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.#########"
+}

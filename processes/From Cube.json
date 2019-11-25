@@ -1,0 +1,11 @@
+{
+	"@type":"Process",
+	"Name":"From Cube",
+	"Code@Code.link":"From Cube.ti",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":[],
+	"Variables":[]
+}

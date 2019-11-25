@@ -1,0 +1,25 @@
+{
+	"@type":"Subset",
+	"Name":"lines",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('plan_lines')/Hierarchies('plan_lines')/Elements('line 1')"
+		},
+		{
+			"@id":"Dimensions('plan_lines')/Hierarchies('plan_lines')/Elements('line 2')"
+		},
+		{
+			"@id":"Dimensions('plan_lines')/Hierarchies('plan_lines')/Elements('line 3')"
+		},
+		{
+			"@id":"Dimensions('plan_lines')/Hierarchies('plan_lines')/Elements('line 4')"
+		},
+		{
+			"@id":"Dimensions('plan_lines')/Hierarchies('plan_lines')/Elements('line 5')"
+		},
+		{
+			"@id":"Dimensions('plan_lines')/Hierarchies('plan_lines')/Elements('All Lines')"
+		}
+	]
+}

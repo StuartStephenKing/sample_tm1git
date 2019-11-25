@@ -1,0 +1,56 @@
+{
+	"@type":"NativeView",
+	"Name":"budget_placeholder",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('plan_time')/Hierarchies('plan_time')/Subsets('n level 2005 time')"
+			}
+		}
+	],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('plan_source')/Hierarchies('plan_source')/Subsets('budget')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('plan_exchange_rates')/Hierarchies('plan_exchange_rates')/Subsets('local exchange rate')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('plan_version')/Hierarchies('plan_version')/Subsets('FY 2004 Budget')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('plan_department')/Hierarchies('plan_department')/Subsets('n level departments')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('plan_business_unit')/Hierarchies('plan_business_unit')/Subsets('n level business unit')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('plan_chart_of_accounts')/Hierarchies('plan_chart_of_accounts')/Subsets('n level accounts')"
+			}
+		}
+	],
+	"Titles":[],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.#########"
+}

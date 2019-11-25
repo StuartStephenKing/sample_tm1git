@@ -1,0 +1,40 @@
+{
+	"@type":"Hierarchy",
+	"Name":"plan_exchange_rates",
+	"Elements":
+	[
+		{
+			"Name":"local",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"beginning",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"ending",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"planning",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"spot",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"actual",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"plan_exchange_rates.subsets/actual.json",
+		"plan_exchange_rates.subsets/All Exchange Rates.json",
+		"plan_exchange_rates.subsets/All rates.json",
+		"plan_exchange_rates.subsets/local.json",
+		"plan_exchange_rates.subsets/local exchange rate.json",
+		"plan_exchange_rates.subsets/plan exchange rates not local.json"
+	]
+}

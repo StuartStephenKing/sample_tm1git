@@ -1,0 +1,231 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+OldCubeLogChanges = CUBEGETLOGCHANGES('plan_Report');
+CUBESETLOGCHANGES('plan_Report', 0);
+#****End: Generated Statements****
+
+#PStartDate
+## Get Start Date (YY-MM-DD)
+VStartYear=subst(PstartDate,9,2);
+VStartMonth=subst(PstartDate,1,2);
+VStartDay=subst(PstartDate,4,2);
+
+VStartDate=(VstartYear|'-'|VstartMonth|'-'|VstartDay);
+ZStartDate=DAYNO(VstartDate);
+
+#PEndDate
+## Get End Date (YY-MM-DD)
+VEndYear=subst(PEndDate,9,2);
+VEndMonth=subst(PEndDate,1,2);
+VEndDay=subst(PEndDate,4,2);
+
+VEndDate=(VEndYear|'-'|VEndMonth|'-'|VEndDay);
+ZEndDate=DAYNO(VEndDate);
+
+
+
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+V6='actual';
+V7='Actual';
+## Get Year
+Vdatelength=Long(V1);
+If(Vdatelength=9);
+Vyear=subst(V1,6,4);
+else;
+Vyear=subst(V1,7,4);
+endif;
+## Find Month
+FindMonth=SCAN('/', V1);
+If(Findmonth=2);
+Vmonth=subst(V1,1,1);
+else;
+Vmonth=subst(V1,1,2);
+endif;
+If(Vmonth@='1');
+Xmonth='Jan-';
+endif;
+If(Vmonth@='2');
+Xmonth='Feb-';
+endif;
+If(Vmonth@='3');
+Xmonth='Mar-';
+endif;
+If(Vmonth@='4');
+Xmonth='Apr-';
+endif;
+If(Vmonth@='5');
+Xmonth='May-';
+endif;
+If(Vmonth@='6');
+Xmonth='Jun-';
+endif;
+If(Vmonth@='7');
+Xmonth='Jul-';
+endif;
+If(Vmonth@='8');
+Xmonth='Aug-';
+endif;
+If(Vmonth@='9');
+Xmonth='Sep-';
+endif;
+If(Vmonth@='10');
+Xmonth='Oct-';
+endif;
+If(Vmonth@='11');
+Xmonth='Nov-';
+endif;
+If(Vmonth@='12');
+Xmonth='Dec-';
+endif;
+V8=Xmonth|Vyear;
+## Get Year
+Vdatelength=Long(V1);
+If(Vdatelength=9);
+Vyear=subst(V1,6,4);
+Xyear=subst(V1,8,2);
+else;
+Vyear=subst(V1,7,4);
+Xyear=subst(V1,9,2);
+endif;
+## Find Month
+FindMonth=SCAN('/', V1);
+If(Findmonth=2);
+Vmonth=subst(V1,1,1);
+Xmonth='0'|Vmonth;
+else;
+Vmonth=subst(V1,1,2);
+Xmonth=Vmonth;
+endif;
+## Find Day
+Vcheck1=subst(V1,4,1);
+If(Vcheck1@='/');
+Xday='0'|subst(V1,3,1);
+endif;
+Vcheck2=subst(V1,6,1);
+If(Vcheck2@='/');
+Xday=subst(V1,4,2);
+endif;
+Vcheck3=subst(V1,5,1);
+If(Vcheck3@='/');
+Xcheck=SCAN('/', V1);
+If(Xcheck=2);
+Xday=subst(V1,3,2);
+else;
+Xday='0'|subst(V1,4,1);
+endif;
+endif;
+VDate=Xyear|'-'|Xmonth|'-'|Xday;
+V9=dayno(Vdate);
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+V6='actual';
+V7='Actual';
+## Get Year
+Vdatelength=Long(V1);
+If(Vdatelength=9);
+Vyear=subst(V1,6,4);
+else;
+Vyear=subst(V1,7,4);
+endif;
+## Find Month
+FindMonth=SCAN('/', V1);
+If(Findmonth=2);
+Vmonth=subst(V1,1,1);
+else;
+Vmonth=subst(V1,1,2);
+endif;
+If(Vmonth@='1');
+Xmonth='Jan-';
+endif;
+If(Vmonth@='2');
+Xmonth='Feb-';
+endif;
+If(Vmonth@='3');
+Xmonth='Mar-';
+endif;
+If(Vmonth@='4');
+Xmonth='Apr-';
+endif;
+If(Vmonth@='5');
+Xmonth='May-';
+endif;
+If(Vmonth@='6');
+Xmonth='Jun-';
+endif;
+If(Vmonth@='7');
+Xmonth='Jul-';
+endif;
+If(Vmonth@='8');
+Xmonth='Aug-';
+endif;
+If(Vmonth@='9');
+Xmonth='Sep-';
+endif;
+If(Vmonth@='10');
+Xmonth='Oct-';
+endif;
+If(Vmonth@='11');
+Xmonth='Nov-';
+endif;
+If(Vmonth@='12');
+Xmonth='Dec-';
+endif;
+V8=Xmonth|Vyear;
+## Get Year
+Vdatelength=Long(V1);
+If(Vdatelength=9);
+Vyear=subst(V1,6,4);
+Xyear=subst(V1,8,2);
+else;
+Vyear=subst(V1,7,4);
+Xyear=subst(V1,9,2);
+endif;
+## Find Month
+FindMonth=SCAN('/', V1);
+If(Findmonth=2);
+Vmonth=subst(V1,1,1);
+Xmonth='0'|Vmonth;
+else;
+Vmonth=subst(V1,1,2);
+Xmonth=Vmonth;
+endif;
+## Find Day
+Vcheck1=subst(V1,4,1);
+If(Vcheck1@='/');
+Xday='0'|subst(V1,3,1);
+endif;
+Vcheck2=subst(V1,6,1);
+If(Vcheck2@='/');
+Xday=subst(V1,4,2);
+endif;
+Vcheck3=subst(V1,5,1);
+If(Vcheck3@='/');
+Xcheck=SCAN('/', V1);
+If(Xcheck=2);
+Xday=subst(V1,3,2);
+else;
+Xday='0'|subst(V1,4,1);
+endif;
+endif;
+VDate=Xyear|'-'|Xmonth|'-'|Xday;
+V9=dayno(Vdate);
+#****End: Generated Statements****
+
+IF(V9>=ZStartDate & V9<=ZEndDate);
+CellPutN(local,'plan_Report',BU,Dept,Account,V7,V6,V8);
+#Asciioutput('c:\temp\aabbcc.txt',BU,Dept,Account,V7,V6,V8);
+endif;
+#endregion
+#region Epilog
+#****Begin: Generated Statements***
+CUBESETLOGCHANGES('plan_Report', OldCubeLogChanges);
+#****End: Generated Statements****
+#endregion

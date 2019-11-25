@@ -1,0 +1,28 @@
+{
+	"@type":"Subset",
+	"Name":"Dy Nlevel Dept",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('plan_department')/Hierarchies('plan_department')/Elements('105')"
+		},
+		{
+			"@id":"Dimensions('plan_department')/Hierarchies('plan_department')/Elements('300')"
+		},
+		{
+			"@id":"Dimensions('plan_department')/Hierarchies('plan_department')/Elements('405')"
+		},
+		{
+			"@id":"Dimensions('plan_department')/Hierarchies('plan_department')/Elements('110')"
+		},
+		{
+			"@id":"Dimensions('plan_department')/Hierarchies('plan_department')/Elements('410')"
+		},
+		{
+			"@id":"Dimensions('plan_department')/Hierarchies('plan_department')/Elements('200')"
+		},
+		{
+			"@id":"Dimensions('plan_department')/Hierarchies('plan_department')/Elements('115')"
+		}
+	]
+}

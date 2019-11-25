@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"AllReports",
+	"Expression":"TM1SubsetAll([plan_report])"
+}

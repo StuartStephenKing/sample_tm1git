@@ -1,0 +1,10 @@
+{
+	"@type":"Subset",
+	"Name":"Default",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('plan_measure_setting')/Hierarchies('plan_measure_setting')/Elements('Setting')"
+		}
+	]
+}

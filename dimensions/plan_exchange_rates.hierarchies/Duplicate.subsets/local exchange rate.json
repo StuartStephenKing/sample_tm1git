@@ -1,0 +1,10 @@
+{
+	"@type":"Subset",
+	"Name":"local exchange rate",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('plan_exchange_rates')/Hierarchies('Duplicate')/Elements('local')"
+		}
+	]
+}

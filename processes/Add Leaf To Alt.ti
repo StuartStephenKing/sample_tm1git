@@ -1,0 +1,10 @@
+#region Prolog
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+HierarchyElementInsertDirect( 'plan_department', 'plan_department_alt1', '', 'My New Department', 'N');
+#endregion
+#region Epilog
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

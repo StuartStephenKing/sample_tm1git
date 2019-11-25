@@ -1,0 +1,34 @@
+{
+	"@type":"Subset",
+	"Name":"Default",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('plan_business_unit')/Hierarchies('newHierarchyName')/Elements('10000')"
+		},
+		{
+			"@id":"Dimensions('plan_business_unit')/Hierarchies('newHierarchyName')/Elements('10100')"
+		},
+		{
+			"@id":"Dimensions('plan_business_unit')/Hierarchies('newHierarchyName')/Elements('10110')"
+		},
+		{
+			"@id":"Dimensions('plan_business_unit')/Hierarchies('newHierarchyName')/Elements('10120')"
+		},
+		{
+			"@id":"Dimensions('plan_business_unit')/Hierarchies('newHierarchyName')/Elements('10200')"
+		},
+		{
+			"@id":"Dimensions('plan_business_unit')/Hierarchies('newHierarchyName')/Elements('10210')"
+		},
+		{
+			"@id":"Dimensions('plan_business_unit')/Hierarchies('newHierarchyName')/Elements('10220')"
+		},
+		{
+			"@id":"Dimensions('plan_business_unit')/Hierarchies('newHierarchyName')/Elements('10300')"
+		},
+		{
+			"@id":"Dimensions('plan_business_unit')/Hierarchies('newHierarchyName')/Elements('10400')"
+		}
+	]
+}

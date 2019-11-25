@@ -1,0 +1,19 @@
+{
+	"@type":"Hierarchy",
+	"Name":"plan_controls",
+	"Elements":
+	[
+		{
+			"Name":"Data Source",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Corporate Currency",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"plan_controls.subsets/Default.json"
+	]
+}

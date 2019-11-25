@@ -1,0 +1,24 @@
+#region Prolog
+#****Begin: Generated Statements***
+OldCubeLogChanges = CUBEGETLOGCHANGES('plan_BudgetPlan');
+CUBESETLOGCHANGES('plan_BudgetPlan', 0);
+#****End: Generated Statements****
+#endregion
+#region Metadata
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+#****Begin: Generated Statements***
+vMonth=subst(plan_time, 1, 7) | '3';
+vVersion='FY 2003 Budget';
+if (VALUE_IS_STRING=1, CellPutS(SVALUE,'plan_BudgetPlan',vVersion,plan_business_unit,plan_department,plan_chart_of_accounts,plan_exchange_rates,plan_s
+ource,vMonth), CellPutN(NVALUE, 'plan_BudgetPlan', vVersion,plan_business_unit,plan_department,plan_chart_of_accounts,plan_exchange_rates,plan_source,
+vMonth));
+#****End: Generated Statements****
+#endregion
+#region Epilog
+#****Begin: Generated Statements***
+CUBESETLOGCHANGES('plan_BudgetPlan', OldCubeLogChanges);
+#****End: Generated Statements****
+#endregion

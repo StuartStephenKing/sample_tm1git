@@ -1,0 +1,34 @@
+{
+	"@type":"Subset",
+	"Name":"Consolidations",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('plan_chart_of_accounts')/Hierarchies('plan_chart_of_accounts')/Elements('Net Operating Income')"
+		},
+		{
+			"@id":"Dimensions('plan_chart_of_accounts')/Hierarchies('plan_chart_of_accounts')/Elements('Revenue')"
+		},
+		{
+			"@id":"Dimensions('plan_chart_of_accounts')/Hierarchies('plan_chart_of_accounts')/Elements('COS')"
+		},
+		{
+			"@id":"Dimensions('plan_chart_of_accounts')/Hierarchies('plan_chart_of_accounts')/Elements('Operating Expense')"
+		},
+		{
+			"@id":"Dimensions('plan_chart_of_accounts')/Hierarchies('plan_chart_of_accounts')/Elements('Other Expenses')"
+		},
+		{
+			"@id":"Dimensions('plan_chart_of_accounts')/Hierarchies('plan_chart_of_accounts')/Elements('Payroll')"
+		},
+		{
+			"@id":"Dimensions('plan_chart_of_accounts')/Hierarchies('plan_chart_of_accounts')/Elements('Travel')"
+		},
+		{
+			"@id":"Dimensions('plan_chart_of_accounts')/Hierarchies('plan_chart_of_accounts')/Elements('Depr & Amort')"
+		},
+		{
+			"@id":"Dimensions('plan_chart_of_accounts')/Hierarchies('plan_chart_of_accounts')/Elements('Adv & Marketing')"
+		}
+	]
+}

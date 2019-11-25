@@ -1,0 +1,139 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+OldCubeLogChanges = CUBEGETLOGCHANGES('plan_Report');
+CUBESETLOGCHANGES('plan_Report', 0);
+#****End: Generated Statements****
+
+Punique_id=str(NOW,10,0);
+
+## Create a subset for the year selected##
+Vmonth=1;
+Vplan_time_SSN='budget_calendar'|Punique_id;
+SubsetCreate('plan_time', Vplan_time_SSN);
+while(Vmonth <=12);
+if(Vmonth=1);
+Velement='Jan-'|Pyear;
+endif;
+if(Vmonth=2);
+Velement='Feb-'|Pyear;
+endif;
+if(Vmonth=3);
+Velement='Mar-'|Pyear;
+endif;
+if(Vmonth=4);
+Velement='Apr-'|Pyear;
+endif;
+if(Vmonth=5);
+Velement='May-'|Pyear;
+endif;
+if(Vmonth=6);
+Velement='Jun-'|Pyear;
+endif;
+if(Vmonth=7);
+Velement='Jul-'|Pyear;
+endif;
+if(Vmonth=8);
+Velement='Aug-'|Pyear;
+endif;
+if(Vmonth=9);
+Velement='Sep-'|Pyear;
+endif;
+if(Vmonth=10);
+Velement='Oct-'|Pyear;
+endif;
+if(Vmonth=11);
+Velement='Nov-'|Pyear;
+endif;
+if(Vmonth=12);
+Velement='Dec-'|Pyear;
+endif;
+SubsetElementInsert('plan_time', Vplan_time_SSN, Velement, Vmonth);
+Vmonth=Vmonth+1;
+end;
+
+##create subset for given version##
+Vplan_version_SSN='budget_version'|Punique_id;
+SubsetCreate('plan_version', Vplan_version_SSN);
+SubsetElementInsert('plan_version', Vplan_version_SSN, Pversion, 1);
+
+##create subset for plan exchange rate##
+Vplan_exchange_rate_SSN='budget_exchange_rate'|Punique_id;
+SubsetCreate('plan_exchange_rates', Vplan_exchange_rate_SSN);
+SubsetElementInsert('plan_exchange_rates', Vplan_exchange_rate_SSN, 'Actual', 1);
+
+##create subset for plan_source##
+Vplan_source_SSN='budget_source'|Punique_id;
+SubsetCreate('plan_source', Vplan_source_SSN);
+SubsetElementInsert('plan_source', Vplan_source_SSN, 'Budget', 1);
+
+##Create temp cube view as the source of the data to load###
+Vplan_budget_TVN='Plan_BudgetPlan'|Punique_id;
+ViewCreate('Plan_BudgetPlan', Vplan_budget_TVN);
+
+ViewSetSkipZeroes('Plan_BudgetPlan', Vplan_budget_TVN, 1);
+ViewSetSkipCalcs('Plan_BudgetPlan', Vplan_budget_TVN, 0);
+ViewSetSkipRuleValues('Plan_BudgetPlan', Vplan_budget_TVN, 0);
+
+ViewSubsetAssign('Plan_BudgetPlan', Vplan_budget_TVN, 'plan_time', Vplan_time_SSN);
+ViewSubsetAssign('Plan_BudgetPlan', Vplan_budget_TVN, 'plan_version', Vplan_version_SSN);
+ViewSubsetAssign('Plan_BudgetPlan', Vplan_budget_TVN, 'plan_business_unit', 'n level business unit');
+ViewSubsetAssign('Plan_BudgetPlan', Vplan_budget_TVN, 'plan_department', 'n level departments');
+ViewSubsetAssign('Plan_BudgetPlan', Vplan_budget_TVN, 'plan_chart_of_accounts', 'n level accounts');
+ViewSubsetAssign('Plan_BudgetPlan', Vplan_budget_TVN, 'plan_exchange_rates', Vplan_exchange_rate_SSN);
+ViewSubsetAssign('Plan_BudgetPlan', Vplan_budget_TVN, 'plan_source', Vplan_source_SSN);
+
+ViewColumnDimensionSet('Plan_BudgetPlan', Vplan_budget_TVN, 'plan_time', 1);
+
+ViewRowDimensionSet('plan_budgetplan', Vplan_budget_TVN, 'plan_version', 1);
+ViewRowDimensionSet('plan_budgetplan', Vplan_budget_TVN, 'plan_business_unit', 2);
+ViewRowDimensionSet('plan_budgetplan', Vplan_budget_TVN, 'plan_department', 3);
+ViewRowDimensionSet('plan_budgetplan', Vplan_budget_TVN, 'plan_chart_of_accounts', 4);
+ViewRowDimensionSet('plan_budgetplan', Vplan_budget_TVN, 'plan_exchange_rates', 5);
+ViewRowDimensionSet('plan_budgetplan', Vplan_budget_TVN, 'plan_source', 6);
+
+data_source_CV = Vplan_budget_TVN;
+
+
+
+DatasourceCubeview = data_source_cv;
+
+
+
+
+
+
+
+
+
+
+
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+if (VALUE_IS_STRING=1, CellPutS(SVALUE,'plan_Report',plan_business_unit,plan_department,plan_chart_of_accounts,plan_exchange_rates,plan_source,plan_ti
+me), CellPutN(NVALUE, 'plan_Report', plan_business_unit,plan_department,plan_chart_of_accounts,plan_exchange_rates,plan_source,plan_time));
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+CUBESETLOGCHANGES('plan_Report', OldCubeLogChanges);
+#****End: Generated Statements****
+
+
+ViewDestroy('plan_BudgetPlan', Vplan_budget_TVN);
+
+SubsetDestroy('plan_version', Vplan_version_SSN);
+SubsetDestroy('plan_exchange_rates', Vplan_exchange_rate_SSN);
+SubsetDestroy('plan_source', Vplan_source_SSN);
+SubsetDestroy('plan_time', Vplan_time_SSN);
+
+#endregion

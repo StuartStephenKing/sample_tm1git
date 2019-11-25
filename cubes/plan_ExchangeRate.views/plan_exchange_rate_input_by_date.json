@@ -1,0 +1,38 @@
+{
+	"@type":"NativeView",
+	"Name":"plan_exchange_rate_input_by_date",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('plan_exchange_rates')/Hierarchies('plan_exchange_rates')/Subsets('All rates')"
+			}
+		}
+	],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('plan_currency')/Hierarchies('plan_currency')/Subsets('All Currency')"
+			}
+		}
+	],
+	"Titles":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('plan_time')/Hierarchies('plan_time')/Subsets('plan_time_month')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('plan_time')/Hierarchies('plan_time')/Elements('Jun-2004')"
+			}
+		}
+	],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.#########"
+}

@@ -1,0 +1,63 @@
+{
+	"@type":"NativeView",
+	"Name":"zero out 2003 budget",
+	"Columns":[],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('plan_version')/Hierarchies('plan_version')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('plan_version')/Hierarchies('plan_version')/Elements('FY 2003 Budget')"
+					}
+				]
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('plan_business_unit')/Hierarchies('plan_business_unit')/Subsets('n level business unit')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('plan_department')/Hierarchies('plan_department')/Subsets('n level departments')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('plan_chart_of_accounts')/Hierarchies('plan_chart_of_accounts')/Subsets('n level accounts')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('plan_exchange_rates')/Hierarchies('plan_exchange_rates')/Subsets('local')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('plan_source')/Hierarchies('plan_source')/Subsets('input')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('plan_time')/Hierarchies('plan_time')/Subsets('n level 2003 time')"
+			}
+		}
+	],
+	"Titles":[],
+	"SuppressEmptyColumns":true,
+	"SuppressEmptyRows":true,
+	"FormatString":"0.00"
+}

@@ -1,0 +1,22 @@
+{
+	"@type":"Subset",
+	"Name":"TotalBU and Geography",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('plan_business_unit')/Hierarchies('newHierarchyName')/Elements('10000')"
+		},
+		{
+			"@id":"Dimensions('plan_business_unit')/Hierarchies('newHierarchyName')/Elements('10100')"
+		},
+		{
+			"@id":"Dimensions('plan_business_unit')/Hierarchies('newHierarchyName')/Elements('10200')"
+		},
+		{
+			"@id":"Dimensions('plan_business_unit')/Hierarchies('newHierarchyName')/Elements('10300')"
+		},
+		{
+			"@id":"Dimensions('plan_business_unit')/Hierarchies('newHierarchyName')/Elements('10400')"
+		}
+	]
+}

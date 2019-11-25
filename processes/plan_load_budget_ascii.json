@@ -1,0 +1,76 @@
+{
+	"@type":"Process",
+	"Name":"plan_load_budget_ascii",
+	"Code@Code.link":"plan_load_budget_ascii.ti",
+	"DataSource":
+	{
+		"Type":"ASCII",
+		"asciiDecimalSeparator":".",
+		"asciiDelimiterChar":",",
+		"asciiDelimiterType":"Character",
+		"asciiHeaderRecords":1,
+		"asciiQuoteCharacter":"\"",
+		"asciiThousandSeparator":",",
+		"dataSourceNameForClient":".\\data_load\\budget_input\\Plan_Load_Budget_ascii.csv",
+		"dataSourceNameForServer":".\\data_load\\budget_input\\Plan_Load_Budget_ascii.csv"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"PVersion",
+			"Prompt":"Which Version?",
+			"Value":"FY 2003 Budget",
+			"Type":"String"
+		},
+		{
+			"Name":"PStartDate",
+			"Prompt":"Budget Start Date?",
+			"Value":"Jan-2003",
+			"Type":"String"
+		},
+		{
+			"Name":"PEndDate",
+			"Prompt":"Budget End Date?",
+			"Value":"Dec-2003",
+			"Type":"String"
+		}
+	],
+	"Variables":
+	[
+		{
+			"Name":"V1",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"Dept",
+			"Type":"String",
+			"Position":2,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"BU",
+			"Type":"String",
+			"Position":3,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"Account",
+			"Type":"String",
+			"Position":4,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"Value",
+			"Type":"Numeric",
+			"Position":5,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

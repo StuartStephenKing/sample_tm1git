@@ -1,0 +1,10 @@
+{
+	"@type":"Subset",
+	"Name":"current year",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('plan_time')/Hierarchies('plan_time')/Elements('2004')"
+		}
+	]
+}

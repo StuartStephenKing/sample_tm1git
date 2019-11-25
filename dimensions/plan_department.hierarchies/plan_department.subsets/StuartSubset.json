@@ -1,0 +1,37 @@
+{
+	"@type":"Subset",
+	"Name":"StuartSubset",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('plan_department')/Hierarchies('plan_department')/Elements('1000')"
+		},
+		{
+			"@id":"Dimensions('plan_department')/Hierarchies('plan_department')/Elements('100')"
+		},
+		{
+			"@id":"Dimensions('plan_department')/Hierarchies('plan_department')/Elements('105')"
+		},
+		{
+			"@id":"Dimensions('plan_department')/Hierarchies('plan_department')/Elements('110')"
+		},
+		{
+			"@id":"Dimensions('plan_department')/Hierarchies('plan_department')/Elements('115')"
+		},
+		{
+			"@id":"Dimensions('plan_department')/Hierarchies('plan_department')/Elements('200')"
+		},
+		{
+			"@id":"Dimensions('plan_department')/Hierarchies('plan_department')/Elements('410')"
+		},
+		{
+			"@id":"Dimensions('plan_department')/Hierarchies('plan_department')/Elements('300')"
+		},
+		{
+			"@id":"Dimensions('plan_department')/Hierarchies('plan_department')/Elements('400')"
+		},
+		{
+			"@id":"Dimensions('plan_department')/Hierarchies('plan_department')/Elements('405')"
+		}
+	]
+}

@@ -1,0 +1,57 @@
+{
+	"@type":"NativeView",
+	"Name":"zero_out_2003_actuals",
+	"Columns":[],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('plan_business_unit')/Hierarchies('plan_business_unit')/Subsets('n level business unit')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('plan_department')/Hierarchies('plan_department')/Subsets('n level departments')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('plan_chart_of_accounts')/Hierarchies('plan_chart_of_accounts')/Subsets('n level accounts')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('plan_exchange_rates')/Hierarchies('plan_exchange_rates')/Subsets('local')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('plan_report')/Hierarchies('plan_report')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('plan_report')/Hierarchies('plan_report')/Elements('actual')"
+					}
+				]
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('plan_time')/Hierarchies('plan_time')/Subsets('n level 2003 time')"
+			}
+		}
+	],
+	"Titles":[],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.00"
+}

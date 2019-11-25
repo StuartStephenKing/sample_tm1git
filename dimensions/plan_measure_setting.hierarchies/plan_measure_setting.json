@@ -1,0 +1,15 @@
+{
+	"@type":"Hierarchy",
+	"Name":"plan_measure_setting",
+	"Elements":
+	[
+		{
+			"Name":"Setting",
+			"Type":"String"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"plan_measure_setting.subsets/Default.json"
+	]
+}

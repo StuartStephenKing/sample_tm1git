@@ -1,0 +1,18 @@
+{
+	"@type":"Chore",
+	"Name":"Super Chore",
+	"StartTime":"2019-11-18T04:38:01Z",
+	"ExecutionMode":"SingleCommit",
+	"Frequency":"P1DT00H00M00S",
+	"Tasks":
+	[
+		{
+			"Step":0,
+			"Parameters":[],
+			"Process":
+			{
+				"@id":"Processes('Fail Ti')"
+			}
+		}
+	]
+}

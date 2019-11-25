@@ -1,0 +1,19 @@
+{
+	"@type":"Process",
+	"Name":"git_task",
+	"Code@Code.link":"git_task.ti",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"op",
+			"Prompt":"",
+			"Value":0,
+			"Type":"Numeric"
+		}
+	],
+	"Variables":[]
+}

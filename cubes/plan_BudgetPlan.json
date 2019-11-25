@@ -1,0 +1,52 @@
+{
+	"@type":"Cube",
+	"Name":"plan_BudgetPlan",
+	"Rules@Code.link":"plan_BudgetPlan.rules",
+	"DrillthroughRules@Code.link":"plan_BudgetPlan.drillthrough.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('plan_version')"
+		},
+		{
+			"@id":"Dimensions('plan_business_unit')"
+		},
+		{
+			"@id":"Dimensions('plan_department')"
+		},
+		{
+			"@id":"Dimensions('plan_chart_of_accounts')"
+		},
+		{
+			"@id":"Dimensions('plan_exchange_rates')"
+		},
+		{
+			"@id":"Dimensions('plan_source')"
+		},
+		{
+			"@id":"Dimensions('plan_time')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"plan_BudgetPlan.views/budget_placeholder.json",
+		"plan_BudgetPlan.views/Budget Input Detailed.json",
+		"plan_BudgetPlan.views/Budget Input Total.json",
+		"plan_BudgetPlan.views/Budget Line Input.json",
+		"plan_BudgetPlan.views/Detailed Cost Of Sales Analysis.json",
+		"plan_BudgetPlan.views/Detailed Expense Analysis.json",
+		"plan_BudgetPlan.views/Detailed Revenue Analysis.json",
+		"plan_BudgetPlan.views/Dy Slice To 2004 Exec Report.json",
+		"plan_BudgetPlan.views/goal_input_all.json",
+		"plan_BudgetPlan.views/goal_input_nlevel.json",
+		"plan_BudgetPlan.views/Goal By Detailed Chart Of Account.json",
+		"plan_BudgetPlan.views/Goal FY 2004 Budget.json",
+		"plan_BudgetPlan.views/Goal Input.json",
+		"plan_BudgetPlan.views/High Level Profit And Loss.json",
+		"plan_BudgetPlan.views/mover.json",
+		"plan_BudgetPlan.views/plan_budget_input.json",
+		"plan_BudgetPlan.views/zero out 2003 budget.json",
+		"plan_BudgetPlan.views/zero out 2004 budget.json",
+		"plan_BudgetPlan.views/zero out FY 2004 Budget.json"
+	]
+}

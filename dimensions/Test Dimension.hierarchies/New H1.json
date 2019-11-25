@@ -1,0 +1,12 @@
+{
+	"@type":"Hierarchy",
+	"Name":"New H1",
+	"Elements":
+	[
+		{
+			"Name":"ABC",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":[]
+}

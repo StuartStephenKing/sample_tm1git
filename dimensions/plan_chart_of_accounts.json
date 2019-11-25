@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"plan_chart_of_accounts",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('plan_chart_of_accounts')/Hierarchies('plan_chart_of_accounts')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"plan_chart_of_accounts.hierarchies/plan_chart_of_accounts.json"
+	]
+}
